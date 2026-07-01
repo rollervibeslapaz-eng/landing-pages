@@ -247,7 +247,42 @@ a {
   color: #d1d5db;
   line-height: 1.6;
 }
+/* CONFIANZA */
 
+.trust {
+  padding: 70px 8%;
+  background: #050816;
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.trust-item {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 20px;
+  padding: 28px;
+}
+
+.trust-item h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #facc15;
+}
+
+.trust-item p {
+  color: #d1d5db;
+  line-height: 1.6;
+}
+
+@media (max-width: 850px) {
+  .trust-grid {
+    grid-template-columns: 1fr;
+  }
+}
 /* PAQUETES */
 
 .packages {
