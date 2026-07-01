@@ -280,5 +280,104 @@ a {
 
   .services-grid {
     grid-template-columns: 1fr;
+    /* PAQUETES */
+
+.packages {
+  padding: 90px 8%;
+  background: #050816;
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.package-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 24px;
+  padding: 35px;
+  transition: 0.3s;
+}
+
+.package-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(250,204,21,0.65);
+}
+
+.featured-package {
+  border: 2px solid #facc15;
+  box-shadow: 0 20px 60px rgba(250,204,21,0.18);
+}
+
+.package-card h3 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 34px;
+  font-weight: 800;
+  color: #facc15;
+  margin-bottom: 20px;
+}
+
+.package-card ul {
+  list-style: none;
+  margin-bottom: 28px;
+}
+
+.package-card li {
+  color: #d1d5db;
+  margin-bottom: 12px;
+}
+
+.package-card li::before {
+  content: "✓ ";
+  color: #facc15;
+  font-weight: bold;
+}
+
+/* CONTACTO */
+
+.contact {
+  padding: 90px 8%;
+  background:
+    radial-gradient(circle at center, rgba(250,204,21,0.20), transparent 35%),
+    #080d1f;
+  text-align: center;
+}
+
+.contact-box {
+  max-width: 780px;
+  margin: auto;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 28px;
+  padding: 55px 30px;
+}
+
+.contact-box span {
+  color: #facc15;
+  font-weight: 700;
+}
+
+.contact-box h2 {
+  font-size: clamp(34px, 5vw, 52px);
+  margin: 15px 0;
+}
+
+.contact-box p {
+  color: #d1d5db;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* RESPONSIVE EXTRA */
+
+@media (max-width: 850px) {
+  .packages-grid {
+    grid-template-columns: 1fr;
   }
 }
