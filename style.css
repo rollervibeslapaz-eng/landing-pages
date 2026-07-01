@@ -411,6 +411,7 @@ a {
   .services-grid,
   .packages-grid {
     grid-template-columns: 1fr;
+  }
  /*==========================
 ESTADISTICAS
 ==========================*/
