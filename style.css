@@ -412,6 +412,7 @@ a {
   .packages-grid {
     grid-template-columns: 1fr;
   }
+}  
  /*==========================
 ESTADISTICAS
 ==========================*/
@@ -488,6 +489,5 @@ grid-template-columns:1fr 1fr;
 
 grid-template-columns:1fr;
 
-}
-
-}
+ }
+}  
